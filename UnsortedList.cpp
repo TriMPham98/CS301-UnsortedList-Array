@@ -1,4 +1,3 @@
-
 #include "UnsortedList.h"
 
 template<class T>
@@ -61,4 +60,3 @@ T UnsortedList<T>::GetNextItem() {
     currentPos++;
     return arr[currentPos];
 }
-
