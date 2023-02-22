@@ -9,7 +9,7 @@ UnsortedList<T>::UnsortedList() {
 
 template<class T>
 void UnsortedList<T>::MakeEmpty() {
-
+    length = 0;
 }
 
 template<class T>
