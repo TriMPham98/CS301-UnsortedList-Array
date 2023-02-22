@@ -29,15 +29,12 @@ bool UnsortedList<T>::Contains(T someItem) {
             return true;
         }
     }
-    // Reached the end w/o finding someItem
     return false;
 }
 
 template<class T>
 void UnsortedList<T>::AddItem(T item) {
-
-    arr[length++] = item; // increment the length after the line runs
-//    ++length; // preincrement is faster
+    arr[length++] = item;
 }
 
 template<class T>
