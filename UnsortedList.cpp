@@ -34,6 +34,9 @@ bool UnsortedList<T>::Contains(T someItem) {
 
 template<class T>
 void UnsortedList<T>::AddItem(T item) {
+    if (IsFull()) {
+        return;
+    }
     arr[length++] = item;
 }
 
@@ -55,6 +58,5 @@ void UnsortedList<T>::ResetIterator() {
 
 template<class T>
 T UnsortedList<T>::GetNextItem() {
-    return arr[currentPos++];
 }
 
