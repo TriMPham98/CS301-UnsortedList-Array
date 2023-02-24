@@ -57,6 +57,9 @@ void UnsortedList<T>::ResetIterator() {
 
 template<class T>
 T UnsortedList<T>::GetNextItem() {
+    if (currentPos >= length) {
+        throw "Out of bounds";
+    }
     currentPos++;
     return arr[currentPos];
 }
